@@ -1,0 +1,78 @@
+.cards {
+  max-width: 1140px;
+  margin: 180px auto;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto auto;
+}
+
+.search__select {
+  margin-left: 50px;
+  width: 200px;
+  background-color: var(--white-bg-color);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.463);
+  padding: 1.3rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 1.4;
+  font-weight: 400;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.d-f {
+  display: flex;
+}
+.search__select-list {
+  list-style: none;
+  text-align: center;
+  width: 200px;
+  padding: 1.2rem 0;
+  background-color: var(--white-bg-color);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.313);
+  border-radius: 5px;
+  line-height: 1.4;
+  font-weight: 400;
+  transform: translateY(100%);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  visibility: hidden;
+  transition: visibility 0.5s linear;
+  z-index: 100;
+}
+.d-n {
+  display: none !important;
+}
+.search__input:focus {
+  box-shadow: 0px 5px 15px rgb(0, 0, 0);
+}
+.search__input::placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.42;
+  color: #848484;
+}
+.search__select:hover .search__select-list {
+  visibility: visible;
+}
+.search__select-list li {
+  padding: 0.4rem 2.4rem;
+}
+.search__select-list li:hover {
+  background-color: #857d7d;
+}
+.d-child {
+  border: 2px solid blue;
+  border-radius: 15px;
+  padding: 15px 10px;
+  box-shadow: 4px 4px 2px;
+}
+select {
+  margin-top: 100px;
+  margin-left: 80px;
+  padding: 15px 40px;
+  font-size: 30px;
+}
